@@ -1,0 +1,71 @@
+/* ─── CTA BANNER ─── */
+#cta {
+  background: var(--accent);
+  text-align: center;
+  padding: 6rem 4rem;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle background texture */
+#cta::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle, rgba(255,255,255,0.06) 1px, transparent 1px);
+  background-size: 40px 40px;
+  pointer-events: none;
+}
+
+#cta .section-label {
+  justify-content: center;
+  color: rgba(255,255,255,0.55);
+}
+
+#cta .section-label::before {
+  background: rgba(255,255,255,0.45);
+}
+
+#cta .section-title {
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.cta-sub {
+  font-size: 1rem;
+  color: rgba(255,255,255,0.65);
+  max-width: 480px;
+  margin: 0 auto 2.5rem;
+  line-height: 1.75;
+}
+
+.cta-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+/* Split button on dark background — white arrow box for contrast */
+#cta .btn-primary::after {
+  background: #fff;
+  color: var(--accent);
+}
+
+#cta .btn-primary:hover::after {
+  background: #e8f5e0;
+  transform: translateX(3px);
+}
+
+/* Outlined secondary on dark background */
+#cta .btn-secondary {
+  color: rgba(255, 255, 255, 0.9);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+#cta .btn-secondary:hover {
+  border-color: rgba(255, 255, 255, 0.65);
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+}

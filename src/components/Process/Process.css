@@ -1,0 +1,195 @@
+/* ─── PROCESS ─── */
+#process {
+  background: #fff;
+}
+
+/* ── Centred header ── */
+.process-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+/* Small pill badge above the title */
+.process-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-family: "Onest", Arial, Helvetica, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 400;
+  color: var(--text);
+  background: #ffffff;
+  border: 1px solid rgba(26, 28, 34, 0.14);
+  border-radius: 100px;
+  padding: 0.32rem 1rem 0.32rem 0.75rem;
+  margin-bottom: 1.2rem;
+  box-shadow: 0 1px 4px rgba(26, 28, 34, 0.06);
+  letter-spacing: 0.01em;
+}
+
+.process-badge-dot {
+  font-size: 0.55rem;
+  color: var(--text);
+  opacity: 0.7;
+  line-height: 1;
+}
+
+.process-header .section-title {
+  margin-bottom: 0;
+}
+
+/* ── Steps row ── */
+.process-steps {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+/* ── Individual step ── */
+.step {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 0.5rem;
+  transition: transform 0.25s;
+}
+
+/* Stagger every even step downward */
+.step--low {
+  margin-top: 72px;
+}
+
+/* ── Circle visual ── */
+.step-visual {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.step-circle {
+  width: 165px;
+  height: 165px;
+  border-radius: 50%;
+  background: linear-gradient(
+    145deg,
+    rgba(14, 48, 46, 0.06) 0%,
+    rgba(200, 85, 42, 0.04) 60%,
+    rgba(14, 48, 46, 0.03) 100%
+  );
+  border: 1.5px solid rgba(14, 48, 46, 0.12);
+  box-shadow: 0 8px 30px rgba(14, 48, 46, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  transition: box-shadow 0.3s, transform 0.25s;
+}
+
+.step:hover .step-circle {
+  box-shadow: 0 12px 40px rgba(14, 48, 46, 0.18);
+  transform: translateY(-4px);
+}
+
+/* Decorative hex SVG inside circle */
+.step-circle-hex {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+}
+
+/* Large number watermark */
+.step-circle-num {
+  font-family: "Onest", Arial, Helvetica, sans-serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: rgba(14, 48, 46, 0.18);
+  position: relative;
+  z-index: 1;
+  letter-spacing: -0.03em;
+  line-height: 1;
+}
+
+/* Teal pill badge at base of circle */
+.step-pill {
+  position: absolute;
+  bottom: 2px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: var(--accent3);
+  color: #fff;
+  font-family: "Onest", Arial, Helvetica, sans-serif;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  padding: 0.28rem 0.85rem;
+  border-radius: 100px;
+  white-space: nowrap;
+  box-shadow: 0 2px 8px rgba(45, 125, 125, 0.35);
+}
+
+/* ── Step text ── */
+.step-name {
+  font-family: "Onest", Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 0.5rem;
+}
+
+.step-desc {
+  font-family: "Onest", Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+  max-width: 150px;
+}
+
+/* ── Curved connector arrow ── */
+.step-connector {
+  flex-shrink: 0;
+  width: 60px;
+  margin-top: 52px; /* align with circle centres */
+}
+
+.step-connector--down {
+  /* connector goes high→low, so sits at top */
+  margin-top: 52px;
+}
+
+.step-connector--up {
+  /* connector goes low→high, so sits lower */
+  margin-top: 122px;
+}
+
+.step-connector svg {
+  width: 100%;
+  height: 60px;
+}
+
+/* ── Mobile ── */
+@media (max-width: 900px) {
+  .process-steps {
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+  }
+
+  .step--low {
+    margin-top: 0;
+  }
+
+  .step-connector {
+    display: none;
+  }
+
+  .step-desc {
+    max-width: 280px;
+  }
+}

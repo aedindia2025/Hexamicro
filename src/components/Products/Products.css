@@ -1,0 +1,108 @@
+/* ─── PRODUCTS ─── */
+#products {
+  background: #fff;
+}
+
+/* Centred header */
+.products-header {
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+
+.products-header .section-label {
+  justify-content: center;
+}
+
+.products-header .section-title {
+  margin: 0 auto;
+}
+
+.products-title-accent {
+  color: var(--accent);
+}
+
+/* 4-column grid */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+/* Card */
+.product-card {
+  background: #fff;
+  border: 1px solid rgba(26, 28, 34, 0.12);
+  border-radius: 12px;
+  padding: 2rem 1.75rem 1.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  cursor: default;
+  transition: box-shadow 0.3s, transform 0.25s;
+}
+
+.product-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-4px);
+}
+
+/* Line icon */
+.product-icon-wrap {
+  width: 52px;
+  height: 52px;
+  color: var(--accent);
+  margin-bottom: 1.4rem;
+  flex-shrink: 0;
+}
+
+.product-icon-wrap svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* Title */
+.product-name {
+  font-family: "Onest", Arial, Helvetica, sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.01em;
+}
+
+/* Description */
+.product-desc {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  flex: 1;
+  margin-bottom: 1.4rem;
+}
+
+/* Discover link */
+.product-link {
+  font-family: "Onest", Arial, Helvetica, sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--accent);
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.product-link:hover {
+  opacity: 0.75;
+}
+
+/* Mobile */
+@media (max-width: 1100px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+}

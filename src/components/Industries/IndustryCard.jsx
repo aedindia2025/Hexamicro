@@ -8,12 +8,12 @@ const animations = {
 }
 
 const iconColors = {
-  industrial: { bg: '#E6F1FB', color: '#185FA5' },
-  retail:     { bg: '#E1F5EE', color: '#0F6E56' },
-  buildings:  { bg: '#FAEEDA', color: '#854F0B' },
-  healthcare: { bg: '#EEEDFE', color: '#534AB7' },
-  banking:    { bg: '#FAECE7', color: '#993C1D' },
-  broadcast:  { bg: '#FBEAF0', color: '#993556' },
+  industrial: { bg: '#c5eeaa', color: '#0e302e' },
+  retail:     { bg: '#c5eeaa', color: '#0e302e' },
+  buildings:  { bg: '#c5eeaa', color: '#0e302e' },
+  healthcare: { bg: '#c5eeaa', color: '#0e302e' },
+  banking:    { bg: '#c5eeaa', color: '#0e302e' },
+  broadcast:  { bg: '#c5eeaa', color: '#0e302e' },
 }
 
 const iconMap = {
@@ -70,8 +70,13 @@ export default function IndustryCard({ industry }) {
     <div className="industry-item">
       <div
         className={`ind-icon-wrap ${animClass}`}
-        style={{ background: colors.bg, color: colors.color, '--rc': colors.color }}
+        style={{ color: colors.color, '--rc': colors.color }}
       >
+        {/* Decorative hex — same as Process */}
+        <svg style={{ position:'absolute', inset:0, width:'100%', height:'100%', opacity:0.8 }} viewBox="0 0 120 120" fill="none">
+          <polygon points="60,8 104,32 104,88 60,112 16,88 16,32" stroke="rgba(14,48,46,0.12)" strokeWidth="1.2" fill="none"/>
+          
+        </svg>
         {iconMap[id]?.(colors.color)}
       </div>
       <div className="ind-text">

@@ -23,7 +23,7 @@ const contactItems = [
   { Icon: IconPhone,  label: 'Phone',          value: '+91 44 42348081' },
   {
     Icon: IconMapPin,
-    label: 'Headquarters',
+    label: 'Factory',
     value: '119, 1st floor, Haritha Towers, St Marys Rd, Abiramapuram,\nChennai, Tamil Nadu - 600 018.',
     multiline: true,
   },

@@ -70,8 +70,8 @@
 }
 
 .ind-icon-wrap svg {
-  width: 22px;
-  height: 22px;
+  width: 32px;
+  height: 25px;
   position: relative;
   z-index: 1;
 }
@@ -79,7 +79,7 @@
 .ind-text { padding-top: 2px; }
 .ind-name {
   font-family: "Onest", Arial, sans-serif;
-  font-size: 0.92rem;
+  font-size: 1rem;
   font-weight: 700;
   color: var(--text);
   margin-bottom: 0.3rem;

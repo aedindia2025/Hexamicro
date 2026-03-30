@@ -1,6 +1,6 @@
 // Navigation — fixed top bar with logo, nav links, and CTA button.
 import { useEffect, useState } from 'react'
-import logoImg from '../../assets/logo-v1.png'
+import logoImg from '../../assets/hm.png'
 import './Navigation.css'
 
 const navLinks = [

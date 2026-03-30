@@ -21,31 +21,31 @@ const iconMap = {
       <circle cx="12" cy="10" r="2"/>
     </svg>
   ),
-  hxa: ( // AIO Computers
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-      <rect x="2" y="3" width="20" height="14" rx="2"/>
-      <path d="M8 21h8M12 17v4"/>
-      <path d="M6 7h12M6 11h8"/>
-    </svg>
-  ),
-  hxs: ( // Rack Servers
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-      <rect x="2" y="3" width="20" height="5" rx="1"/>
-      <rect x="2" y="10" width="20" height="5" rx="1"/>
-      <rect x="2" y="17" width="20" height="5" rx="1"/>
-      <circle cx="18" cy="5.5" r="0.75" fill="currentColor" stroke="none"/>
-      <circle cx="18" cy="12.5" r="0.75" fill="currentColor" stroke="none"/>
-      <circle cx="18" cy="19.5" r="0.75" fill="currentColor" stroke="none"/>
-    </svg>
-  ),
-  hxn: ( // Networking
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M5 12.55a11 11 0 0 1 14.08 0"/>
-      <path d="M1.42 9a16 16 0 0 1 21.16 0"/>
-      <path d="M8.53 16.11a6 6 0 0 1 6.95 0"/>
-      <circle cx="12" cy="20" r="1" fill="currentColor" stroke="none"/>
-    </svg>
-  ),
+  // hxa: ( // AIO Computers
+  //   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+  //     <rect x="2" y="3" width="20" height="14" rx="2"/>
+  //     <path d="M8 21h8M12 17v4"/>
+  //     <path d="M6 7h12M6 11h8"/>
+  //   </svg>
+  // ),
+  // hxs: ( // Rack Servers
+  //   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+  //     <rect x="2" y="3" width="20" height="5" rx="1"/>
+  //     <rect x="2" y="10" width="20" height="5" rx="1"/>
+  //     <rect x="2" y="17" width="20" height="5" rx="1"/>
+  //     <circle cx="18" cy="5.5" r="0.75" fill="currentColor" stroke="none"/>
+  //     <circle cx="18" cy="12.5" r="0.75" fill="currentColor" stroke="none"/>
+  //     <circle cx="18" cy="19.5" r="0.75" fill="currentColor" stroke="none"/>
+  //   </svg>
+  // ),
+  // hxn: ( // Networking
+  //   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+  //     <path d="M5 12.55a11 11 0 0 1 14.08 0"/>
+  //     <path d="M1.42 9a16 16 0 0 1 21.16 0"/>
+  //     <path d="M8.53 16.11a6 6 0 0 1 6.95 0"/>
+  //     <circle cx="12" cy="20" r="1" fill="currentColor" stroke="none"/>
+  //   </svg>
+  // ),
   hxl: ( // Active LED Displays
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
       <rect x="2" y="3" width="20" height="14" rx="2"/>

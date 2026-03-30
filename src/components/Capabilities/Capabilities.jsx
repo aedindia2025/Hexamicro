@@ -42,8 +42,8 @@ export default function Capabilities() {
 
       {/* 2×2 capability cards */}
       <div className="cap-grid">
-        {capabilities.map(({ num, title, desc }) => (
-          <div className="cap-card fade-in" key={num}>
+        {capabilities.map(({ num, title, desc }, i) => (
+          <div className="cap-card fade-in" key={num} style={{ '--delay': `${i * 0.1}s` }}>
             <div className="cap-card-num">{num}</div>
             <div className="cap-card-body">
               <h4>{title}</h4>

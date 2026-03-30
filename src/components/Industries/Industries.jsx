@@ -19,10 +19,11 @@ export default function Industries() {
 
       {/* Card grid — first card is featured */}
       <div className="industries-grid">
-        {industries.map((industry) => (
+        {industries.map((industry, i) => (
           <IndustryCard
             key={industry.id}
             industry={industry}
+            delay={i * 0.09}
           />
         ))}
       </div>

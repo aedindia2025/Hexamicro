@@ -50,11 +50,11 @@ const iconMap = {
   ),
 }
 
-export default function IndustryCard({ industry }) {
+export default function IndustryCard({ industry, delay = 0 }) {
   const { id, name, desc } = industry
 
   return (
-    <div className="industry-card fade-in">
+    <div className="industry-card fade-in" style={{ '--delay': `${delay}s` }}>
       <div className="ind-icon-wrap">
         {iconMap[id]}
       </div>

@@ -11,6 +11,31 @@
   text-align: center;
 }
 
+/* ── Ambient glow orbs ── */
+.hero-glow {
+  position: absolute;
+  width: 700px;
+  height: 700px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(45, 125, 125, 0.13) 0%, transparent 70%);
+  top: -180px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: pulseGlow 5s ease-in-out infinite;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.hero-glow--2 {
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(200, 85, 42, 0.07) 0%, transparent 70%);
+  top: 60px;
+  left: 60%;
+  animation-delay: 2.5s;
+  animation-duration: 6s;
+}
+
 /* ── Content ── */
 .hero-content {
   position: relative;
@@ -30,6 +55,7 @@
   letter-spacing: -0.03em;
   color: var(--text);
   margin-bottom: 1.2rem;
+  animation: floatUp 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.1s both;
 }
 
 .hero-title-muted {
@@ -44,6 +70,7 @@
   color: var(--text-muted);
   max-width: 700px;
   margin: 0 auto 2rem;
+  animation: floatUp 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.28s both;
 }
 
 .hero-actions {
@@ -53,6 +80,7 @@
   justify-content: center;
   flex-wrap: wrap;
   margin-bottom: 3rem;
+  animation: floatUp 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.46s both;
 }
 
 /* Solid dark pill CTA */
@@ -68,15 +96,15 @@
   padding: 0.85rem 2.2rem;
   text-decoration: none;
   border-radius: 50px;
-  transition: opacity 0.2s, transform 0.15s;
+  transition: opacity 0.2s, transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 20px rgba(26, 28, 34, 0.18);
 }
 
 .hero-cta:hover {
-  opacity: 0.85;
-  transform: translateY(-1px);
+  opacity: 0.88;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(26, 28, 34, 0.28);
 }
-
-
 
 /* ── Mobile ── */
 @media (max-width: 900px) {
@@ -88,6 +116,12 @@
     font-size: clamp(2rem, 8vw, 3rem);
   }
 
+  .hero-glow {
+    width: 400px;
+    height: 400px;
+  }
 
-
+  .hero-glow--2 {
+    display: none;
+  }
 }

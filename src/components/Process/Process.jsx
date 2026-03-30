@@ -20,7 +20,7 @@ export default function Process() {
           <Fragment key={id}>
 
             {/* Step card */}
-            <div className={`step fade-in${index % 2 === 1 ? ' step--low' : ''}`}>
+            <div className={`step fade-in${index % 2 === 1 ? ' step--low' : ''}`} style={{ '--delay': `${index * 0.12}s` }}>
 
               {/* Circle visual */}
               <div className="step-visual">

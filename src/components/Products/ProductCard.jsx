@@ -62,11 +62,11 @@ const iconMap = {
   ),
 }
 
-export default function ProductCard({ product }) {
+export default function ProductCard({ product, delay = 0 }) {
   const { id, name, desc } = product
 
   return (
-    <div className="product-card fade-in">
+    <div className="product-card fade-in" style={{ '--delay': `${delay}s` }}>
       <div className="product-icon-wrap">
         {iconMap[id]}
       </div>

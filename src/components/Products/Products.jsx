@@ -14,8 +14,8 @@ export default function Products() {
       </div>
 
       <div className="products-grid">
-        {products.map((product) => (
-          <ProductCard key={product.id} product={product} />
+        {products.map((product, i) => (
+          <ProductCard key={product.id} product={product} delay={i * 0.07} />
         ))}
       </div>
     </section>

@@ -35,7 +35,7 @@ export default function Contact() {
       <div className="contact-layout">
 
         {/* Left: info */}
-        <div className="contact-info">
+        <div className="contact-info fade-in-left">
           <div className="section-label"><span className="industries-badge-dot">✦</span> Reach Out</div>
           <h2 className="section-title" style={{ fontSize: '1.8rem' }}>
             Let's Start a Conversation
@@ -66,7 +66,9 @@ export default function Contact() {
         </div>
 
         {/* Right: form */}
-        <ContactForm />
+        <div className="fade-in-right" style={{ '--delay': '0.15s' }}>
+          <ContactForm />
+        </div>
       </div>
     </section>
   )

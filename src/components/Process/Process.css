@@ -87,8 +87,16 @@
 
 .step:hover .step-circle {
   box-shadow: 0 12px 40px rgba(14, 48, 46, 0.18);
-  transform: translateY(-4px);
+  transform: translateY(-6px);
 }
+
+.step-circle {
+  animation: float 4s ease-in-out infinite;
+}
+
+.step:nth-child(3) .step-circle { animation-delay: 0.6s; }
+.step:nth-child(5) .step-circle { animation-delay: 1.2s; }
+.step:nth-child(7) .step-circle { animation-delay: 1.8s; }
 
 /* Decorative hex SVG inside circle */
 .step-circle-hex {

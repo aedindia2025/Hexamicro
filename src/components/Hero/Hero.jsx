@@ -1,9 +1,13 @@
-// Hero — centred layout, two-tone headline, globe visual with arc rings.
+// Hero — centred layout, animated entrance + ambient glow.
 import './Hero.css'
 
 export default function Hero() {
   return (
     <section id="hero">
+
+      {/* Ambient background glows */}
+      <div className="hero-glow" />
+      <div className="hero-glow hero-glow--2" />
 
       {/* ── Centred text content ── */}
       <div className="hero-content">
@@ -19,12 +23,8 @@ export default function Hero() {
 
         <div className="hero-actions">
           <a href="#products" className="hero-cta">Explore Products</a>
-          {/* <a href="#contact" className="btn-secondary">Request a Demo</a> */}
         </div>
-
-
       </div>
-
 
     </section>
   )

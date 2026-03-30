@@ -172,9 +172,29 @@ section {
 .fade-in {
   opacity: 0;
 }
-
 .fade-in.visible {
-  animation: floatUp 0.7s ease forwards;
+  animation: floatUp 0.65s cubic-bezier(0.22, 1, 0.36, 1) var(--delay, 0s) forwards;
+}
+
+.fade-in-left {
+  opacity: 0;
+}
+.fade-in-left.visible {
+  animation: floatLeft 0.7s cubic-bezier(0.22, 1, 0.36, 1) var(--delay, 0s) forwards;
+}
+
+.fade-in-right {
+  opacity: 0;
+}
+.fade-in-right.visible {
+  animation: floatRight 0.7s cubic-bezier(0.22, 1, 0.36, 1) var(--delay, 0s) forwards;
+}
+
+.scale-in {
+  opacity: 0;
+}
+.scale-in.visible {
+  animation: scaleIn 0.6s cubic-bezier(0.22, 1, 0.36, 1) var(--delay, 0s) forwards;
 }
 
 /* ─── KEYFRAMES ─── */
@@ -226,6 +246,36 @@ section {
 @keyframes floatUp {
   from { opacity: 0; transform: translateY(28px); }
   to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes floatLeft {
+  from { opacity: 0; transform: translateX(-32px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes floatRight {
+  from { opacity: 0; transform: translateX(32px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.93); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+@keyframes shimmer {
+  0%   { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+@keyframes pulseGlow {
+  0%, 100% { opacity: 0.5; transform: translateX(-50%) scale(1); }
+  50%       { opacity: 0.9; transform: translateX(-50%) scale(1.12); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-10px); }
 }
 
 /* ─── MOBILE BASE ─── */

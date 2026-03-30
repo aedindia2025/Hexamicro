@@ -48,14 +48,14 @@ export default function Stats() {
 
   return (
     <section className="stats-section" ref={ref}>
-      {stats.map(({ num, suffix, label, decimal }, i) => (
+      {/* {stats.map(({ num, suffix, label, decimal }, i) => (
         <div className="stat-item fade-in" key={label} style={{ '--delay': `${i * 0.1}s` }}>
           <div className="stat-value">
             <CountUp target={num} suffix={suffix} decimal={decimal} run={run} />
           </div>
           <div className="stat-label">{label}</div>
         </div>
-      ))}
+      ))} */}
     </section>
   )
 }

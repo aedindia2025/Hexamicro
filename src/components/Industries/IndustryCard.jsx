@@ -18,10 +18,7 @@ const iconMap = {
   buildings: (
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
       <rect x="3" y="3" width="18" height="18" rx="2"/>
-      <path d="M3 9h18"/>
-      <path d="M3 15h18"/>
-      <path d="M9 3v18"/>
-      <path d="M15 3v18"/>
+      <path d="M3 9h18M3 15h18M9 3v18M15 3v18"/>
     </svg>
   ),
   healthcare: (
@@ -31,13 +28,7 @@ const iconMap = {
   ),
   banking: (
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M3 21h18"/>
-      <path d="M3 10h18"/>
-      <path d="M5 6l7-3 7 3"/>
-      <path d="M5 10v11"/>
-      <path d="M19 10v11"/>
-      <path d="M9 10v11"/>
-      <path d="M15 10v11"/>
+      <path d="M3 21h18M3 10h18M5 6l7-3 7 3M5 10v11M19 10v11M9 10v11M15 10v11"/>
     </svg>
   ),
   broadcast: (
@@ -50,16 +41,31 @@ const iconMap = {
   ),
 }
 
-export default function IndustryCard({ industry, delay = 0 }) {
+const iconColors = {
+  industrial: { bg: '#E6F1FB', color: '#185FA5' },
+  retail:     { bg: '#E1F5EE', color: '#0F6E56' },
+  buildings:  { bg: '#FAEEDA', color: '#854F0B' },
+  healthcare: { bg: '#EEEDFE', color: '#534AB7' },
+  banking:    { bg: '#FAECE7', color: '#993C1D' },
+  broadcast:  { bg: '#FBEAF0', color: '#993556' },
+}
+
+export default function IndustryCard({ industry }) {
   const { id, name, desc } = industry
+  const colors = iconColors[id] || { bg: '#F1EFE8', color: '#5F5E5A' }
 
   return (
-    <div className="industry-card fade-in" style={{ '--delay': `${delay}s` }}>
-      <div className="ind-icon-wrap">
+    <div className="ind-pill">
+      <div
+        className="ind-icon-wrap"
+        style={{ background: colors.bg, color: colors.color }}
+      >
         {iconMap[id]}
       </div>
-      <h3 className="ind-name">{name}</h3>
-      <p className="ind-desc">{desc}</p>
+      <div className="pill-text">
+        <span className="pill-name">{name}</span>
+        <span className="pill-tag">{desc}</span>
+      </div>
     </div>
   )
 }

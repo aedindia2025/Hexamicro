@@ -1,4 +1,5 @@
 // Hero — centred layout, animated entrance + ambient glow.
+import GlobeVisual from './GlobeVisual'
 import './Hero.css'
 
 export default function Hero() {
@@ -25,6 +26,9 @@ export default function Hero() {
           <a href="#products" className="hero-cta">Explore Products</a>
         </div>
       </div>
+
+      {/* Dotted globe visual */}
+      <GlobeVisual />
 
     </section>
   )

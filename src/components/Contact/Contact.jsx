@@ -19,7 +19,7 @@ const IconMapPin = () => (
 )
 
 const contactItems = [
-  { Icon: IconMail,   label: 'Email',          value: 'info@aedindia.com' },
+  { Icon: IconMail,   label: 'Email',          value: 'info@hexamicro.com' },
   { Icon: IconPhone,  label: 'Phone',          value: '+91 44 42348081' },
   {
     Icon: IconMapPin,

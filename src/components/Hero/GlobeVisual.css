@@ -1,0 +1,22 @@
+/* ─── GLOBE VISUAL ─── */
+.hero-globe-wrap {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  animation: floatUp 1s cubic-bezier(0.22, 1, 0.36, 1) 0.6s both;
+  line-height: 0;
+}
+
+.hero-globe-canvas {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .hero-globe-wrap {
+    max-width: 100%;
+  }
+}

@@ -23,8 +23,14 @@ const contactItems = [
   { Icon: IconPhone,  label: 'Phone',          value: '+91 44 42348081' },
   {
     Icon: IconMapPin,
+    label: 'Corporate Office',
+    value: 'Abhiramapuram, Chennai 600018',
+    multiline: true,
+  },
+  {
+    Icon: IconMapPin,
     label: 'Factory',
-    value: '119, 1st floor, Haritha Towers, St Marys Rd, Abiramapuram,\nChennai, Tamil Nadu - 600 018.',
+    value: 'Mevalurkuppam, Sriperumbedur 602105',
     multiline: true,
   },
 ]

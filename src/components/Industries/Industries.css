@@ -1,164 +1,112 @@
-/* ─── INDUSTRIES ─── */
 #industries {
   background: var(--bg2);
   padding: 5rem 2rem;
 }
-
-/* ── Centred header ── */
 .industries-header {
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 3.5rem;
 }
-
 .industries-badge {
   display: inline-flex;
   align-items: center;
   gap: 7px;
-  font-family: "Onest", Arial, Helvetica, sans-serif;
   font-size: 0.78rem;
-  font-weight: 400;
   color: #0e302e;
-  background-color: #f2f5f1;
+  background: #f2f5f1;
   border-radius: 5px;
   padding: 5px 10px;
   margin-bottom: 1.2rem;
-  box-shadow: 0 1px 4px rgba(26, 28, 34, 0.06);
+  box-shadow: 0 1px 4px rgba(26,28,34,0.06);
 }
+.industries-badge-dot { font-size: 0.55rem; opacity: 0.7; }
+.industries-header .section-title { margin: 0 auto; }
+.industries-header .section-sub  { margin: 0 auto; }
 
-.industries-badge-dot {
-  font-size: 0.55rem;
-  opacity: 0.7;
-  line-height: 1;
-}
-
-.industries-header .section-title {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.industries-header .section-sub {
+.industries-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem 2.5rem;
+  max-width: 880px;
   margin: 0 auto;
 }
 
-/* ── Marquee tracks ── */
-.track-wrap {
-  position: relative;
-  overflow: hidden;
-  margin-bottom: 1.25rem;
-}
-
-.track-wrap::before,
-.track-wrap::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 120px;
-  z-index: 2;
-  pointer-events: none;
-}
-
-.track-wrap::before {
-  left: 0;
-  background: linear-gradient(to right, var(--bg2), transparent);
-}
-
-.track-wrap::after {
-  right: 0;
-  background: linear-gradient(to left, var(--bg2), transparent);
-}
-
-.track {
+.industry-item {
   display: flex;
-  gap: 0.75rem;
-  width: max-content;
+  align-items: flex-start;
+  gap: 1rem;
 }
 
-.track1 { animation: scroll-left 100s linear infinite; }
-.track2 { animation: scroll-right 95s linear infinite; }
-
-.track:hover { animation-play-state: paused; }
-
-@keyframes scroll-left {
-  from { transform: translateX(0); }
-  to   { transform: translateX(-50%); }
-}
-
-@keyframes scroll-right {
-  from { transform: translateX(-50%); }
-  to   { transform: translateX(0); }
-}
-
-/* ── Pill card ── */
-.ind-pill {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  padding: 14px 22px;
-  background: var(--bg);
-  border: 1px solid var(--border);
-  border-radius: 40px;
-  white-space: nowrap;
-  flex-shrink: 0;
-  cursor: default;
-  transition: border-color 0.2s, background 0.2s;
-}
-
-.ind-pill:hover {
-  border-color: var(--border-hover);
-  background: var(--bg2);
-}
-
-/* ── Icon circle ── */
 .ind-icon-wrap {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+  position: relative;
 }
-
 .ind-icon-wrap svg {
-  width: 18px;
-  height: 18px;
+  width: 22px;
+  height: 22px;
+  position: relative;
+  z-index: 1;
 }
 
-/* ── Pill text ── */
-.pill-text {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-}
-
-.pill-name {
-  font-family: "Onest", Arial, Helvetica, sans-serif;
-  font-size: 0.88rem;
+.ind-text { padding-top: 2px; }
+.ind-name {
+  font-family: "Onest", Arial, sans-serif;
+  font-size: 0.92rem;
   font-weight: 700;
   color: var(--text);
-  display: block;
+  margin-bottom: 0.3rem;
+  line-height: 1.3;
 }
-
-.pill-tag {
-  font-family: "Onest", Arial, Helvetica, sans-serif;
-  font-size: 0.73rem;
+.ind-desc {
+  font-family: "Onest", Arial, sans-serif;
+  font-size: 0.78rem;
   color: var(--text-muted);
-  display: block;
+  line-height: 1.65;
 }
 
-/* ── Mobile ── */
-@media (max-width: 768px) {
-  #industries {
-    padding: 3.5rem 0;
-  }
+/* ── Icon animations ── */
+.anim-industrial svg { animation: ind-spin 6s linear infinite; transform-origin: center; }
+@keyframes ind-spin { to { transform: rotate(360deg); } }
 
-  .industries-header {
-    padding: 0 1.5rem;
-  }
+.anim-retail svg { animation: ind-bounce 1.8s ease-in-out infinite; }
+@keyframes ind-bounce { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-5px); } }
 
-  .track-wrap::before,
-  .track-wrap::after {
-    width: 60px;
-  }
+
+.anim-buildings svg path {
+  stroke-dasharray: 80;
+  stroke-dashoffset: 80;
+  animation: ind-draw-grid 2s ease-in-out infinite;
+}
+@keyframes ind-draw-grid {
+  0% { stroke-dashoffset: 80; }
+  60%, 100% { stroke-dashoffset: 0; }
+}
+
+.anim-healthcare svg path {
+  stroke-dasharray: 60;
+  stroke-dashoffset: 60;
+  animation: ind-draw 1.6s ease-in-out infinite;
+}
+@keyframes ind-draw { 0% { stroke-dashoffset: 60; } 60%,100% { stroke-dashoffset: 0; } }
+
+.anim-banking .col1 { animation: ind-rise 1.8s ease-in-out infinite; transform-origin: bottom; }
+.anim-banking .col2 { animation: ind-rise 1.8s ease-in-out 0.3s infinite; transform-origin: bottom; }
+.anim-banking .col3 { animation: ind-rise 1.8s ease-in-out 0.6s infinite; transform-origin: bottom; }
+@keyframes ind-rise { 0%,100% { transform: scaleY(1); } 40% { transform: scaleY(0.5); } }
+
+.anim-broadcast .w1 { animation: ind-wave 2s ease-out infinite; }
+.anim-broadcast .w2 { animation: ind-wave 2s ease-out 0.4s infinite; }
+.anim-broadcast .w3 { animation: ind-wave 2s ease-out 0.8s infinite; }
+@keyframes ind-wave { 0%,100% { opacity: 0.2; } 50% { opacity: 1; } }
+
+@media (max-width: 700px) {
+  .industries-grid { grid-template-columns: repeat(2, 1fr); gap: 1.75rem 1.5rem; }
+}
+@media (max-width: 440px) {
+  .industries-grid { grid-template-columns: 1fr; }
 }

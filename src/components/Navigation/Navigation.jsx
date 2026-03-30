@@ -37,7 +37,7 @@ export default function Navigation() {
         ))}
       </ul>
 
-      <button className="nav-cta">Get a Quote</button>
+      {/* <button className="nav-cta">Get a Quote</button> */}
     </nav>
   )
 }

@@ -27,10 +27,10 @@ export const industries = [
     desc: 'IEC 60601-1 aware AIO computers and displays for clinical, diagnostic, and patient-facing applications.',
   },
   {
-    id: 'transport',
-    iconCode: 128507,
-    name: 'Transportation & Logistics',
-    desc: 'In-vehicle computing, ticketing kiosks, and wayfinding displays for airports, metros, and logistics hubs.',
+    id: 'banking',
+    iconCode: 127974,
+    name: 'Banking & Finance',
+    desc: 'Secure kiosks, ATM controllers, and branch automation terminals built for 24/7 reliability in regulated financial environments.',
   },
   {
     id: 'broadcast',

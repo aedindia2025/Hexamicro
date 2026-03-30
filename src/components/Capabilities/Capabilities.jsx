@@ -14,11 +14,6 @@ const capabilities = [
   },
   {
     num: '03',
-    title: 'Custom Configuration & OEM/ODM',
-    desc: 'White-label manufacturing and custom firmware integration for OEM and system integrator partners.',
-  },
-  {
-    num: '04',
     title: 'Compliance & Certification',
     desc: 'CE, FCC, RoHS, MIL-STD-810, and ISO 9001 compliant across the product portfolio.',
   },
@@ -37,7 +32,7 @@ export default function Capabilities() {
 
       {/* Centred header */}
       <div className="capabilities-header">
-        <div className="section-label">About Hexamicro</div>
+        <div className="section-label"><span className="industries-badge-dot">✦</span> About Hexamicro</div>
         <h2 className="section-title">Designed Here. Built to Last.</h2>
         <p className="section-sub">
           We combine in-house hardware design with precision electronics manufacturing to deliver

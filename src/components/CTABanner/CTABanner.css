@@ -19,11 +19,9 @@
 
 #cta .section-label {
   justify-content: center;
-  color: rgba(255,255,255,0.55);
-}
-
-#cta .section-label::before {
-  background: rgba(255,255,255,0.45);
+  background-color: #ffffff1a;
+  color: #ffffff;
+  box-shadow: none;
 }
 
 #cta .section-title {

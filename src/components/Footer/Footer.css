@@ -1,18 +1,18 @@
 /* ─── FOOTER ─── */
 footer {
   border-top: 1px solid var(--border);
-  padding: 2.5rem 4rem;
+  padding: 0.5rem 4rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: var(--bg);
+  background: #0e302e;
 }
 
 .footer-copy {
   font-family: "Onest", Arial, Helvetica, sans-serif;
   font-size: 0.65rem;
   letter-spacing: 0.06em;
-  color: var(--text-muted);
+  color: #c4c3c3;
 }
 
 .footer-links {
@@ -24,13 +24,13 @@ footer {
   font-family: "Onest", Arial, Helvetica, sans-serif;
   font-size: 0.8rem;
   font-weight: 500;
-  color: var(--text-muted);
+  color: #c4c3c3;
   text-decoration: none;
   transition: color 0.2s;
 }
 
 .footer-links a:hover {
-  color: var(--accent);
+  color: #fff;
 }
 
 .footer-social {
@@ -46,7 +46,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--text-muted);
+  color: #c4c3c3;
   text-decoration: none;
   font-size: 0.8rem;
   cursor: pointer;
@@ -55,7 +55,7 @@ footer {
 
 .social-btn:hover {
   border-color: var(--accent);
-  color: var(--accent);
+  color: #fff;
   background: rgba(14,48,46,0.05);
 }
 

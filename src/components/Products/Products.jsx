@@ -6,7 +6,7 @@ export default function Products() {
   return (
     <section id="products">
       <div className="products-header">
-        <div className="section-label">Product Lineup</div>
+        <div className="section-label"><span className="industries-badge-dot">✦</span> Product Lineup</div>
         <h2 className="section-title">
           Hardware Built for<br />
           <span className="products-title-accent">Every Environment</span>

@@ -19,7 +19,7 @@ export default function Hero() {
 
         <div className="hero-actions">
           <a href="#products" className="hero-cta">Explore Products</a>
-          <a href="#contact" className="btn-secondary">Request a Demo</a>
+          {/* <a href="#contact" className="btn-secondary">Request a Demo</a> */}
         </div>
 
 

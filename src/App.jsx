@@ -1,5 +1,6 @@
 import Navigation from './components/Navigation/Navigation'
 import Hero from './components/Hero/Hero'
+import Stats from './components/Stats/Stats'
 import Ticker from './components/Ticker/Ticker'
 import Products from './components/Products/Products'
 import Capabilities from './components/Capabilities/Capabilities'
@@ -17,6 +18,7 @@ export default function App() {
     <>
       <Navigation />
       <Hero />
+      <Stats />
       <Ticker />
       <Products />
       <Capabilities />

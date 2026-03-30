@@ -16,11 +16,10 @@
   font-family: "Onest", Arial, Helvetica, sans-serif;
   font-size: 0.78rem;
   font-weight: 400;
-  color: var(--text);
-  background: #ffffff;
-  border: 1px solid rgba(26, 28, 34, 0.14);
-  border-radius: 100px;
-  padding: 0.32rem 1rem 0.32rem 0.75rem;
+  color: #0e302e;
+  background-color: #f2f5f1;
+  border-radius: 5px;
+  padding: 5px 10px;
   margin-bottom: 1.2rem;
   box-shadow: 0 1px 4px rgba(26, 28, 34, 0.06);
 }

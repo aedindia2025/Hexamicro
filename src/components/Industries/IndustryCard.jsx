@@ -29,12 +29,15 @@ const iconMap = {
       <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
     </svg>
   ),
-  transport: (
+  banking: (
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-      <rect x="1" y="3" width="15" height="13" rx="1"/>
-      <path d="M16 8h4l3 5v3h-7V8z"/>
-      <circle cx="5.5" cy="18.5" r="2.5"/>
-      <circle cx="18.5" cy="18.5" r="2.5"/>
+      <path d="M3 21h18"/>
+      <path d="M3 10h18"/>
+      <path d="M5 6l7-3 7 3"/>
+      <path d="M5 10v11"/>
+      <path d="M19 10v11"/>
+      <path d="M9 10v11"/>
+      <path d="M15 10v11"/>
     </svg>
   ),
   broadcast: (

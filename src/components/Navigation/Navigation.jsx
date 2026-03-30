@@ -1,6 +1,5 @@
 // Navigation — fixed top bar with logo, nav links, and CTA button.
-// Nav border brightens on scroll via useEffect.
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import logoImg from '../../assets/logo.jpeg'
 import './Navigation.css'
 
@@ -13,6 +12,8 @@ const navLinks = [
 ]
 
 export default function Navigation() {
+  const [menuOpen, setMenuOpen] = useState(false)
+
   useEffect(() => {
     const nav = document.querySelector('nav')
     const onScroll = () => {
@@ -23,21 +24,33 @@ export default function Navigation() {
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
+  // Close menu on link click
+  const handleLinkClick = () => setMenuOpen(false)
+
   return (
     <nav>
       <a href="#" className="logo">
         <img src={logoImg} alt="Hexamicro" className="logo-img" />
       </a>
 
-      <ul className="nav-links">
+      <ul className={`nav-links${menuOpen ? ' nav-links--open' : ''}`}>
         {navLinks.map(({ label, href }) => (
           <li key={href}>
-            <a href={href}>{label}</a>
+            <a href={href} onClick={handleLinkClick}>{label}</a>
           </li>
         ))}
       </ul>
 
-      {/* <button className="nav-cta">Get a Quote</button> */}
+      {/* Hamburger button — mobile only */}
+      <button
+        className={`nav-hamburger${menuOpen ? ' nav-hamburger--open' : ''}`}
+        onClick={() => setMenuOpen((o) => !o)}
+        aria-label="Toggle menu"
+      >
+        <span />
+        <span />
+        <span />
+      </button>
     </nav>
   )
 }

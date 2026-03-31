@@ -82,7 +82,7 @@
   font-size: 1.05rem;
   font-weight: 400;
   line-height: 1.75;
-  color: var(--text-muted);
+  color: #3c3e49;
   max-width: 700px;
   margin: 0 auto 2rem;
   animation: floatUp 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.28s both;

@@ -7,8 +7,23 @@
   align-items: center;
   padding: 8rem 2rem 0;
   overflow: hidden;
-  background: var(--bg2);
   text-align: center;
+
+  /* Background image */
+  background-image: url('../../assets/herobg.png');
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+/* Mild color wash overlay — sits between image and content */
+#hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(235, 242, 238, 0.72); /* soft mint-white tint, adjust opacity to taste */
+  backdrop-filter: blur(0px);
+  z-index: 0;
 }
 
 /* ── Ambient glow orbs ── */

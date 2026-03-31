@@ -24,9 +24,12 @@
 /* 4-column grid */
 .products-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 280px);
+    grid-template-columns: repeat(5, 1fr);
     gap: 1.5rem;
-    justify-content: center;
+}
+
+.product-card {
+    min-width: 200px; /* prevent too small cards */
 }
 
 /* Card */

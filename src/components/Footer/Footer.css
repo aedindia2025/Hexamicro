@@ -5,14 +5,14 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #0e302e;
+  background: #0095d5;
 }
 
 .footer-copy {
   font-family: "Onest", Arial, Helvetica, sans-serif;
   font-size: 0.65rem;
   letter-spacing: 0.06em;
-  color: #c4c3c3;
+  color: #fff;
 }
 
 .footer-links {
@@ -24,7 +24,7 @@ footer {
   font-family: "Onest", Arial, Helvetica, sans-serif;
   font-size: 0.8rem;
   font-weight: 500;
-  color: #c4c3c3;
+  color: #dbdbdb;
   text-decoration: none;
   transition: color 0.2s;
 }

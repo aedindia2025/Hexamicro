@@ -55,7 +55,7 @@
 .product-icon-wrap {
   width: 52px;
   height: 52px;
-  color: var(--accent);
+  color:#0095d5;
   margin-bottom: 1.4rem;
   flex-shrink: 0;
 }
@@ -89,7 +89,7 @@
   font-family: "Onest", Arial, Helvetica, sans-serif;
   font-size: 0.875rem;
   font-weight: 500;
-  color: var(--accent);
+  color:#0095d5 ;
   text-decoration: none;
   transition: opacity 0.2s;
 }

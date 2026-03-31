@@ -18,7 +18,7 @@ export default function Footer() {
   return (
     <footer>
       <div className="footer-copy">
-        &copy; 2025 Hexamicro Technologies Inc. &nbsp;|&nbsp; All rights reserved.
+        &copy; 2026 Hexamicro Technologies Inc. &nbsp;|&nbsp; All rights reserved.
       </div>
 
       <div className="footer-links">

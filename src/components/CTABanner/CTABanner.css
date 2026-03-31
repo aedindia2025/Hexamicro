@@ -1,6 +1,6 @@
 /* ─── CTA BANNER ─── */
 #cta {
-  background: var(--accent);
+  background: #0095d5;
   text-align: center;
   padding: 4rem 4rem;
   position: relative;
@@ -71,12 +71,12 @@
 
 /* Split button on dark background — white arrow box for contrast */
 #cta .btn-primary::after {
-  background: #fff;
+  background: #d5d8d9;
   color: var(--accent);
 }
 
 #cta .btn-primary:hover::after {
-  background: #e8f5e0;
+  background: #cbd3c6;
   transform: translateX(3px);
 }
 

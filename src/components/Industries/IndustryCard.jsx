@@ -8,12 +8,12 @@ const animations = {
 }
 
 const iconColors = {
-  industrial: { bg: '#c5eeaa', color: '#0e302e' },
-  retail:     { bg: '#c5eeaa', color: '#0e302e' },
-  buildings:  { bg: '#c5eeaa', color: '#0e302e' },
-  healthcare: { bg: '#c5eeaa', color: '#0e302e' },
-  banking:    { bg: '#c5eeaa', color: '#0e302e' },
-  broadcast:  { bg: '#c5eeaa', color: '#0e302e' },
+  industrial: { bg: '#c5eeaa', color: '#0095d5' },
+  retail:     { bg: '#c5eeaa', color: '#0095d5' },
+  buildings:  { bg: '#c5eeaa', color: '#0095d5' },
+  healthcare: { bg: '#c5eeaa', color: '#0095d5' },
+  banking:    { bg: '#c5eeaa', color: '#0095d5' },
+  broadcast:  { bg: '#c5eeaa', color: '#0095d5' },
 }
 
 const iconMap = {

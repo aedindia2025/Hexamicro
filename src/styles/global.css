@@ -97,8 +97,8 @@ section {
   font-size: 0.9rem;
   font-weight: 600;
   letter-spacing: 0.01em;
-  color: var(--text);
-  background: #c5eeaa;
+  color: #fff;
+  background: #024d6d;
   padding: 0.45rem 0.45rem 0.45rem 1.4rem;
   text-decoration: none;
   cursor: pointer;
@@ -122,8 +122,9 @@ section {
 }
 
 .btn-primary:hover {
-  background: #b4e497;
+  background: #fff;
   transform: translateY(-1px);
+  color: #024d6d;
 }
 
 .btn-primary:hover::after {

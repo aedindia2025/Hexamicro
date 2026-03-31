@@ -66,9 +66,9 @@
 }
 
 .cap-card:hover .cap-card-num {
-  background: var(--accent);
+  background:#0095d5;
   color: #fff;
-  border-color: var(--accent);
+  border-color: #0095d5;
 }
 
 .cap-card-body h4 {
@@ -90,7 +90,7 @@
   display: flex;
   align-items: center;
   gap: 2.5rem;
-  background: var(--accent);
+  background: #0095d5;
   border-radius: 10px;
   padding: 2.25rem 2.75rem;
   overflow: hidden;

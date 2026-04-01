@@ -212,12 +212,12 @@
 }
 
 .contact-form .btn-primary::after {
-  background: rgba(255, 255, 255, 0.15);
-  color: #fff;
+  background: #d5d8d9;
+  color: #111;
 }
 
 .contact-form .btn-primary:hover {
-  background: #174f4c;
+  background: #024d6d;
 }
 
 .contact-form .btn-primary:disabled {

@@ -122,9 +122,9 @@ section {
 }
 
 .btn-primary:hover {
-  background: #fff;
+
   transform: translateY(-1px);
-  color: #024d6d;
+  color: #ffffff;
 }
 
 .btn-primary:hover::after {

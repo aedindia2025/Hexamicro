@@ -9,11 +9,6 @@ const capabilities = [
   },
   {
     num: '02',
-    title: 'SMT & Through-Hole Assembly',
-    desc: 'Automated SMT lines with AOI inspection. IPC-A-610 Class 2 and Class 3 certified processes.',
-  },
-  {
-    num: '03',
     title: 'Compliance & Certification',
     desc: 'CE, FCC, RoHS, MIL-STD-810, and ISO 9001 compliant across the product portfolio.',
   },

@@ -6,12 +6,8 @@ const productOptions = [
   'Self-Service Kiosks',
   'Industrial PCs',
   'Mini PCs',
-  'All-In-One PCs',
-  'Rack Servers',
-  'Networking Products',
   'Active LED Displays',
   'Display Screens',
-  'Custom / OEM / ODM',
 ]
 
 export default function ContactForm() {
